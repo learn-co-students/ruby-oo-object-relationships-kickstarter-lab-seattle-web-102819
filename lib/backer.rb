@@ -21,7 +21,7 @@ class Backer
     #with this Backer == self instance
     def backed_projects
         #backed_proj = []
-        ProjectBacker.all.select { |pb| pb.backer == self}.map{|proj| proj.project}
+        ProjectBacker.all.select { |pb| pb.backer == self}{|proj| proj.project}.map
     end 
 
 
