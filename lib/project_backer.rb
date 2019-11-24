@@ -11,6 +11,4 @@ class ProjectBacker
     def self.all
         @@all
     end
-
-
 end
